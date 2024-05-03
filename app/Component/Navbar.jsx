@@ -28,7 +28,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <div className='  flex flex-row lg:gap-16 gap-2'>
+            <div className='  flex flex-row justify-end lg:gap-16 gap-2'>
                 {/* search 226 49 */}
                 <div className=' flex justify-start items-center align-middle lg:gap-2 lg:w-[266px] lg:h-[49px] w-6 h-6 p-5 lg:overflow-hidden lg:p-5 border-[2px] border-[#2B2B2B] rounded-lg lg:bg-[#202020] bg-[#2B2B2B]'>
                     <div>
@@ -51,7 +51,9 @@ const Navbar = () => {
                     </button>
                 </div>
 
-                <SidebarSettings></SidebarSettings>
+                <div>
+                    <SidebarSettings></SidebarSettings>
+                </div>
             </div>
 
 

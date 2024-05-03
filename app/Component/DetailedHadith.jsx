@@ -93,13 +93,21 @@ const DetailedHadith = ({ menuOpen, setMenuOpen }) => {
             </div>
 
             <div className='flex flex-col justify-start bg-[#202020] p-5 rounded-xl gap-8'>
-                <div className=' flex flex-row justify-start items-center gap-2'>
-                    <div>
-                        <Image src={img} alt='logo' width={30} height={30} />
+                <div className=' flex flex-row justify-between items-center'>
+                    <div className=' flex flex-row justify-start items-center gap-2'>
+                        <div>
+                            <Image src={img} alt='logo' width={30} height={30} />
+                        </div>
+
+                        <div>
+                            <p className=' text-secondary text-lg'>১</p>
+                        </div>
                     </div>
 
-                    <div>
-                        <p className=' text-secondary text-lg'>১</p>
+                    <div className=' lg:hidden flex bg-secondary px-3 py-1 rounded-lg'>
+                        <p className=' text-white'>
+                            সহিহ হাদিস
+                        </p>
                     </div>
                 </div>
 
@@ -121,9 +129,9 @@ const DetailedHadith = ({ menuOpen, setMenuOpen }) => {
                     </p>
                 </div>
 
-                <div className=' flex lg:flex-row flex-col justify-between items-center '>
+                <div className='  flex lg:flex-row flex-col justify-between items-center '>
 
-                    <div className=' flex flex-row justify-start items-center gap-3'>
+                    <div className=' hidden lg:flex flex-row justify-start items-center gap-3'>
                         <div>
                             <p className=' text-primary'>হাদিসের মান :</p>
                         </div>
@@ -133,6 +141,8 @@ const DetailedHadith = ({ menuOpen, setMenuOpen }) => {
                             </p>
                         </div>
                     </div>
+
+                    <div className=' lg:hidden flex border-b-2 border-[#2B2B2B] mt-5 mb-5' > </div>
 
                     <div className='flex flex-row justify-start items-center gap-8'>
                         <div><FontAwesomeIcon icon={faCopy} className=' text-primary' size='xl' /></div>
