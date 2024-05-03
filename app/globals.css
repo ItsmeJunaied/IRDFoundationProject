@@ -1,33 +1,52 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: black;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.hexagon {
+  width: 40px;
+  height: 50px;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  background: #2C2C2C;
+  border-radius: 20px;
+  transition: background-color 0.1s ease;
+}
+
+.hexagon:hover {
+  background: #2B9E76; 
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #606060;
+  border-radius: 10px;
+}
+
+#range-slider {
+  width: 600px;
+  margin: auto;
+}
+#range-slider .range-slider__thumb[data-lower] {
+    width: 0;
+}
+#range-slider .range-slider__range {
+    border-radius: 6px;
+}
+
+.accent {
+  accent-color: #2B9E76 ;
+  border: none;
 }
