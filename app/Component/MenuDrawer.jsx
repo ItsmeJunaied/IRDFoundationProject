@@ -10,7 +10,7 @@ const MenuDrawer = () => {
                 {/* Page content here */}
                 <label htmlFor="my-drawer" className=" drawer-button">
                     <div
-                        className='  flex w-full flex-row justify-start gap-3 bg-[#202020] rounded-2xl text-primary p-5 '
+                        className='  flex w-full flex-row justify-start gap-3 bg-ashColor rounded-2xl text-primary p-5 '
 
                     >
 
@@ -25,7 +25,7 @@ const MenuDrawer = () => {
             </div>
             <div className="drawer-side">
                 <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
-                <ul className="menu p-4 w-full min-h-full bg-[#202020] text-primary">
+                <ul className="menu p-4 w-full min-h-full bg-ashColor text-primary">
 
                     <div className=' flex flex-row justify-between items-center p-3'>
 

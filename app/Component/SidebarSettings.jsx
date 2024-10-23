@@ -42,11 +42,11 @@ const SidebarSettings = () => {
             </div>
             <div className="drawer-side z-30 ">
                 <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-                <ul className="menu p-4 w-full  min-h-full bg-[#202020] text-primary">
+                <ul className="menu p-4 w-full  min-h-full bg-ashColor text-primary">
 
                     <div className='  flex flex-col w-full h-full justify-end bg-[#101010]'>
 
-                        <div className=' relative flex flex-col gap-5   p-6 text-primary bg-[#202020]  '>
+                        <div className=' relative flex flex-col gap-5   p-6 text-primary bg-ashColor  '>
 
                             <div className=' flex flex-row justify-between items-center w-full'>
                                 <div>
@@ -63,9 +63,9 @@ const SidebarSettings = () => {
                             </div>
 
 
-                            <div className="flex flex-row bg-[#202020] rounded-lg w-full">
+                            <div className="flex flex-row bg-ashColor rounded-lg w-full">
                                 <div className="relative flex-none w-full">
-                                    <button onClick={toggleDropdown} className="flex justify-between w-full p-3 text-primary bg-[#2C2C2C] border-2 border-[#202020] rounded-md focus:outline-none">
+                                    <button onClick={toggleDropdown} className="flex justify-between w-full p-3 text-primary bg-[#2C2C2C] border-2 border-ashColor rounded-md focus:outline-none">
                                         {selectedFont}
                                         <svg className={`${showOptions ? 'hidden' : ''} w-6 h-6 stroke-current`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                             <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />

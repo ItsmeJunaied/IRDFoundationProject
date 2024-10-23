@@ -14,7 +14,11 @@ module.exports = {
       },
       colors: {
         primary: '#A6ACAF', // custom text color
-        secondary: '#2B9E76'
+        secondary: '#2B9E76',
+        ashColor:'#202020',
+        charcoal: '#2C2C2C',
+        softWhite: '#F2F4F6'
+
       },
       images: {
         domains: ['i.ibb.co'],

@@ -8,7 +8,7 @@ import SidebarSettings from './SidebarSettings';
 
 const Navbar = () => {
     return (
-        <div className=" bg-[#202020] lg:h-[80px] h-[64px] w-full flex flex-row justify-between items-center align-middle px-4 text-white">
+        <div className=" bg-ashColor lg:h-[80px] h-[64px] w-full flex flex-row justify-between items-center align-middle px-4 text-white">
 
             <div className=' flex flex-row items-center gap-5'>
 
@@ -30,12 +30,12 @@ const Navbar = () => {
 
             <div className='  flex flex-row justify-end lg:gap-16 gap-2'>
                 {/* search 226 49 */}
-                <div className=' flex justify-start items-center align-middle lg:gap-2 lg:w-[266px] lg:h-[49px] w-6 h-6 p-5 lg:overflow-hidden lg:p-5 border-[2px] border-[#2B2B2B] rounded-lg lg:bg-[#202020] bg-[#2B2B2B]'>
+                <div className=' flex justify-start items-center align-middle lg:gap-2 lg:w-[266px] lg:h-[49px] w-6 h-6 p-5 lg:overflow-hidden lg:p-5 border-[2px] border-[#2B2B2B] rounded-lg lg:bg-ashColor bg-[#2B2B2B]'>
                     <div>
                         <FontAwesomeIcon icon={faMagnifyingGlass} />
                     </div>
                     <div className=' hidden lg:flex'>
-                        <input className=' text-primary bg-[#202020] outline-none ' type="search" name="" id="" placeholder='Search Hadith' />
+                        <input className=' text-primary bg-ashColor outline-none ' type="search" name="" id="" placeholder='Search Hadith' />
                     </div>
                 </div>
 

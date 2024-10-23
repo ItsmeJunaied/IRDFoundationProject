@@ -10,13 +10,13 @@ const DetailedHadith = ({ menuOpen, setMenuOpen }) => {
     //     setMenuOpen(!menuOpen);
     // };
     return (
-        <div className=' flex flex-col w-full h-[840px]  bg-[#101010] pt-5 gap-5 overflow-y-scroll '>
+        <div className=' flex flex-col w-full h-screen  bg-[#101010] pt-5 gap-5 overflow-y-scroll '>
 
             <div>
                 <MenuDrawer />
             </div>
 
-            <div className=' hidden lg:flex lg:flex-col w-full bg-[#202020] rounded-2xl text-primary p-5  '>
+            <div className=' hidden lg:flex lg:flex-col w-full bg-ashColor rounded-2xl text-primary p-5  '>
                 <div className=' flex flex-row gap-2 items-center '>
 
                     <div>
@@ -61,7 +61,7 @@ const DetailedHadith = ({ menuOpen, setMenuOpen }) => {
                 </div>
             </div>
 
-            <div className=' w-full p-5 flex flex-row justify-start gap-5 items-center bg-[#202020] rounded-xl'>
+            <div className=' w-full p-5 flex flex-row justify-start gap-5 items-center bg-ashColor rounded-xl'>
 
                 <div className=' w-12 h-12 rounded-2xl text-white bg-secondary flex justify-center items-center'>
                     <p>১</p>
@@ -72,7 +72,7 @@ const DetailedHadith = ({ menuOpen, setMenuOpen }) => {
                 </div>
             </div>
 
-            <div className=' flex flex-col justify-start bg-[#202020] p-5 rounded-xl gap-5'>
+            <div className=' flex flex-col justify-start bg-ashColor p-5 rounded-xl gap-5'>
                 <div className=' flex flex-row justify-start items-center  gap-3'>
                     <div>
                         <FontAwesomeIcon icon={faBookOpen} className=' text-secondary' />
@@ -92,7 +92,7 @@ const DetailedHadith = ({ menuOpen, setMenuOpen }) => {
                 <div><p className=' text-primary'>এ মর্মে আল্লাহ তা’আলার বাণীঃ “নিশ্চয়ই আমি আপনার প্রতি সেরূপ ওয়াহী প্রেরণ করেছি যেরূপ নূহ ও তাঁর পরবর্তী নবীদের প্রতি ওয়াহী প্রেরণ করেছিলাম”। (সূরা আন-নিসা ৪/১৬৩)</p></div>
             </div>
 
-            <div className='flex flex-col justify-start bg-[#202020] p-5 rounded-xl gap-8'>
+            <div className='flex flex-col justify-start bg-ashColor p-5 rounded-xl gap-8'>
                 <div className=' flex flex-row justify-between items-center'>
                     <div className=' flex flex-row justify-start items-center gap-2'>
                         <div>

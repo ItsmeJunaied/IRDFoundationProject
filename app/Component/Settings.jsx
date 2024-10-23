@@ -1,11 +1,13 @@
 'use client'
+import { toggleDarkMode } from '@/store/darkModeSlice';
 import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
 
 const Settings = () => {
     const [showOptions, setShowOptions] = useState(false);
     const [selectedFont, setSelectedFont] = useState('Arial');
-
+    const dispatch = useDispatch();
     const toggleDropdown = () => {
         setShowOptions(!showOptions);
     };
@@ -26,11 +28,16 @@ const Settings = () => {
         setTranslateValue(event.target.value);
     };
 
+    // const [darkMode, setDarkMode] = useState(false)
+
+    const isDarkMode = useSelector((state) => state.darkMode.isDarkMode);
+
+    console.log(isDarkMode);
     return (
 
         <div className='  hidden lg:flex flex-col w-full h-full justify-end bg-[#101010]'>
 
-            <div className=' relative flex flex-col gap-5 lg:w-[336px] lg:h-[376px] rounded-2xl p-6 text-primary bg-[#202020] m-5 '>
+            <div className=' relative flex flex-col gap-5 lg:w-[336px] lg:h-[376px] rounded-2xl p-6 text-primary bg-ashColor m-5 '>
 
                 <div className=' w-full'>
                     <h1 className='  text-center text-xl '>সেটিংস</h1>
@@ -41,9 +48,9 @@ const Settings = () => {
                 </div>
 
 
-                <div className="flex flex-row bg-[#202020] rounded-lg w-full">
+                <div className="flex flex-row bg-ashColor rounded-lg w-full">
                     <div className="relative flex-none w-full">
-                        <button onClick={toggleDropdown} className="flex justify-between w-full p-3 text-primary bg-[#2C2C2C] border-2 border-[#202020] rounded-md focus:outline-none">
+                        <button onClick={toggleDropdown} className="flex justify-between w-full p-3 text-primary bg-[#2C2C2C] border-2 border-ashColor rounded-md focus:outline-none">
                             {selectedFont}
                             <svg className={`${showOptions ? 'hidden' : ''} w-6 h-6 stroke-current`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
@@ -106,14 +113,18 @@ const Settings = () => {
                     </div>
 
                     <div>
-                        <h1>bth</h1>
+                        <input
+                            onClick={() => dispatch(toggleDarkMode())}
+                            type="checkbox"
+                            className="toggle border-[#2B9E76] bg-[#2B9E76] [--tglbg:#234036] "
+                            defaultChecked />
                     </div>
                 </div>
             </div>
 
 
 
-            <div className=' flex flex-col gap-5 lg:w-[336px] lg:h-full rounded-2xl p-6 text-primary bg-[#202020] m-5 '>
+            <div className=' flex flex-col gap-5 lg:w-[336px] lg:h-full rounded-2xl p-6 text-primary bg-ashColor m-5 '>
                 <div>
                     <h1 className=' text-lg text-primary '>আপনিও সদাকায়ে জারিয়াতে অংশ নিন</h1>
                 </div>

@@ -4,9 +4,9 @@ import React from 'react';
 
 const Contents = () => {
     return (
-        <div className='  hidden lg:flex flex-col lg:w-[350px] m-5  bg-[#202020] rounded-2xl '>
+        <div className=' hidden lg:flex mb-5 h-screen flex-col lg:w-[350px] m-5  bg-ashColor rounded-2xl '>
 
-            <div className=' flex flex-row items-center justify-between text-primary border-b-2 border-[#2B2B2B]'>
+            <div className='  flex flex-row items-center justify-between text-primary border-b-2 border-[#2B2B2B]'>
                 <button className=' w-1/2 flex justify-center items-center p-4 border-r-2 border-[#2B2B2B] hover:bg-secondary hover:text-white'>
                     <h1>বই</h1>
                 </button>
@@ -16,7 +16,7 @@ const Contents = () => {
             </div>
 
 
-            <div className=' w-full lg:h-[750px] p-5 overflow-hidden hover:overflow-y-scroll'>
+            <div className=' w-full  p-5 overflow-hidden hover:overflow-y-scroll'>
                 {/* search */}
 
                 <div className=' flex justify-start items-center align-middle lg:gap-4 lg:w-full lg:h-[49px] w-6 h-6 p-5 lg:overflow-hidden lg:p-5  rounded-lg lg:bg-[#2C2C2C] '>
